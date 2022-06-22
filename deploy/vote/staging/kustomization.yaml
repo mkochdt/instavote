@@ -7,3 +7,10 @@ replicas:
   - name: vote
     count: 3 
 
+commonAnnotations:
+  supported-by: martin.koch@telekom.de
+
+configMapGenerator:
+  - name:  vote-options
+    env: options.env
+  
